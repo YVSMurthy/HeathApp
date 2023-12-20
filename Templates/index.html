@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="../static/LandingPage/Landing_styles.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div id="loader">
+        <div id="loader-num">
+            <h1>0%</h1>
+        </div>
+        <div id="loader-text">
+            <h1>Loading...</h1>
+            <div class="loader-box"></div>
+        </div>
+    </div>
+    <div class="main">
+      <div class="nav">
+        <div class="left-nav">
+          <h1>MediBotCare</h1>
+        </div>
+        <div class="right-nav">
+          <div class="right-nav-list">
+            <ul>
+              <li>Home</li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div class="right-nav-buttons">
+            <a href="/login" method="GET">Login</a>
+            <a href="/signup" method="GET">SignUp</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-1" id="home">
+        <div class="left-page1">
+            <div class="left-page1-tagline">
+                <img src="../static/LandingPage/Landing_tagLine.png" alt="Your Pathway to Health
+Simplified by AI">
+            </div>
+            <div class="left-page1-about">
+                The integrated healthcare platform, MediBotCare, revolutionizes the way patients access specialized medical care. We understand the challenges face when navigating through multiple hospital websites to find the right information and care. That's why we've created MediBotCare, a one-stop solution to streamline your healthcare journey.</p>
+            </div>
+        </div>
+        <div class="right-page1">
+            <img src="../static/LandingPage/Landing_right_page1.jpg" alt="">
+        </div>
+      </div>
+      <div id="about" class="page-2">
+        <div class="page-2-heading">
+             <h1>About</h1>
+        </div>
+        <div class="page-2-content">
+            At MediBotCare, we are dedicated to revolutionizing the healthcare experience by addressing the challenges presented by the current healthcare landscape. Our mission is to provide accessible, efficient, and patient-centric healthcare solutions.
+            <br> <br>
+
+Our Vision <br> <br>
+We envision a future where accessing specialized medical care is as easy as the click of a button, where patients can navigate the complex healthcare system with confidence, and where healthcare providers can focus on delivering exceptional care without the burden of administrative tasks. <br> <br>
+
+Our Solution <br> <br>
+To achieve this vision, we have developed an integrated healthcare platform that seamlessly brings together multiple hospital websites, streamlining the healthcare-seeking process for patients. Our platform is designed to simplify the journey of individuals seeking specialized medical care
+
+           <div class="right-contact">
+              <div class="Icons">
+                <div class="Github">
+                  <a href="https://github.com/YVSMurthy/FlaskHealthApp"
+                    ><img src="../static/LandingPage/Landing_Github.png"
+                  /></a>
+                </div>
+              </div>
+              <div class="Copyright"><h3>Copyright 2023 Reserved</h3></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../static/LandingPage/Landing_script.js"></script>
+  </body>
+</html>

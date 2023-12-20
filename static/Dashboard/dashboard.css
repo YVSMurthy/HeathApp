@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Noto+Sans+JP:wght@500&family=Nunito+Sans:opsz,wght@6..12,600&family=Poppins:wght@400;500&family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(33.2deg, rgb(157, 147, 247) 30.2%, rgb(117, 176, 247) 61.4%);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 187, 241);
+    
+}
+
+.navbar {
+    background: linear-gradient(33.2deg, rgb(157, 147, 247) 30.2%, rgb(117, 176, 247) 61.4%);;
+}
+
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(157, 147, 247);
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+#bottom{
+    margin-top: 30vh;
+}
+
+.offcanvas-header {
+    background-color: rgb(157, 147, 247);
+}
+
+.offcanvas-title {
+    color: #fff;
+}
+
+.dropdown {
+    margin-right: 30px;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    width: 10px;
+    margin-right: 20px;
+}
+
+#nav-bar-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name-viewProfile button{
+    background-color: rgb(157, 147, 247);
+}
+.basic-details {
+    display: flex;
+    align-items: center;
+    background-color: rgb(100, 187, 241);
+    background-position: bottom;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.patient-vector-icon {
+    width: 17.5vw;
+    border-radius: 50%;
+    margin-left: 4vw;
+    margin-top: 5vh;
+}
+
+.name-viewProfile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vw; 
+    row-gap: 5px;
+}
+
+#patient {
+    font-size: 2rem;
+}
+
+#patientName {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#viewProfile {
+    background-color: rgb(157, 147, 247);
+    border-radius: 5px;
+    border: 2px solid  rgb(36, 97, 172);
+    width: 20vh;
+    padding: 1vh 2vh;
+}
+
+.patient-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+    row-gap: 20px;
+    margin-top: 1.75vh;
+    border-left: 1px rgb(0, 0, 0);
+}
+
+.detail-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.detail-label b {
+    margin-right: 0.5vw;
+}
+
+.welcome-emergency{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vw;
+    /* gap: 5vw; */
+}
+.welcome{
+    width:73%;
+    height: 30vh;
+    align-items: center;
+}
+.welcome h1{
+    width: 100%;
+    font-size: 4rem;
+    font-family: "Inconsolata", monospace;
+}
+
+.welcome-msg{
+    font-weight: bolder;
+    margin-top: 6vh;
+    margin-left: 15vw;
+}
+.welcome-msg span{
+    font-size: 4.75rem;
+}
+.emergency{
+    margin-right: 5vw;
+    width:30%
+}
+
+.emergency button{
+    padding: 3vh 4vw;
+    border-radius: 20px;
+    border-color: red;
+  background-color: red;
+  color: white;
+}
+.emergency button:hover{
+    border-color: red;
+  background-color: white;
+  color: red;
+  box-shadow: 2px 2px 0px red;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 967px) {
+
+    .welcome-emergency{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-msg{
+        /* margin-left: 25vw; */
+        margin-right: auto;
+    }
+    .welcome-msg h1{
+        font-size:45px;
+    }
+
+    .welcome-msg span{
+        font-size: 55px;
+    }
+
+    .emergency button{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 747px) {
+
+    .basic-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .patient-details{
+        margin-right: 30vw;
+        display: flex;
+    }
+    .name-viewProfile{
+        display: flex;
+        align-items: center;
+    }
+    .name-viewProfile button{
+        width: 20vh;
+    }
+
+}

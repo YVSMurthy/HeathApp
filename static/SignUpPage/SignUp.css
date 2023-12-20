@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('signup_background.png');
+    background-size: 100vw 100vh;
+    padding-top: 3.5%;
+    align-items: center;
+}
+  
+#Register {
+    background-color: rgb(240, 240, 240,0.75);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px;
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 85vh;
+    margin-left: 14.6vw;
+    padding: 1vh 1vw;
+}
+  
+#signup {
+    width: 50%;
+    padding: 0.5vh 2vw;
+    margin-left: 1.75vw;
+}
+
+#siteName {
+    font-size: 2.43vw;
+    margin-bottom: 2vh;
+    margin-left: 9.5vw;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5vh;
+    margin-left: 0.7vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-field {
+    width: 90%;
+    padding: 0.7vw;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+}
+
+#AgeGender {
+    width: 31vw;
+    display: flex;
+    text-align: left;
+}
+
+
+#ageContainer {
+    flex: 1; 
+}
+
+#genderLabel {
+    margin-left: 0.5vw;
+}
+
+#genderContainer {
+    flex: 2;
+    margin-left: 7vw;
+}
+
+#age {
+    width: 9vw;
+}
+
+select {
+    width: 11.7vw;
+    background-color: #ffffff;
+    color: #333;
+    padding: 0.65vw;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+}
+
+.date-of-birth {
+    width: 90%;
+    padding: 0.7vw;
+    margin-bottom: 0.5vw;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+}
+
+#submit {
+    background-color: #007bff;
+    color: white;
+    padding: 1.22vh 1.4vw;
+    border: 2px solid #007bff;
+    width: 12vw;
+    border-radius: 1.5vw;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1.22vh;
+    font-size: 1.1vw;
+    margin-left: 7.5vw;
+}
+
+#submit:hover {
+    font-size: 1.1vw;
+    transition: all 0.25s ease;
+    background-color: #cde0ff;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.right {
+    width: 48%;
+    padding-top: 3.6vh;
+}
+  
+#sideImage {
+    width: 33vw;
+    height: 58vh;
+    margin-top: 7%;
+    margin-right: 0.7vw;
+    border-radius: 5px;
+    opacity: 0.9;
+} 
+
+@media (max-width: 850px) {
+    body {
+        background-size: 100% auto;
+    }
+
+    #Register {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #siteName {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #signup {
+        width: 80vw;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #sideImage {
+        display: none;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+}

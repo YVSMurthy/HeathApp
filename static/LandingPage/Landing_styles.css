@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&family=Noto+Sans+JP:wght@500&family=Nunito+Sans:opsz,wght@6..12,600&family=Poppins:wght@400;500&family=Roboto+Mono:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+head,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+    
+    background-color: white;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#loader{
+    height:100vh;
+    width:100vw;
+    background-color: lightseagreen;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+}
+#loader-num{
+    margin-left: 45.7vw;
+}
+#loader-text{
+    margin-left: 35vw;
+}
+#loader-text h1{
+    padding-left: 9vw;
+    margin-bottom: 2vh;
+    justify-content: center;
+}
+.loader-box{
+    height: 1vh;
+    width: 0vw;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.left-nav {
+  margin-left: 5vw;
+}
+
+.right-nav {
+  margin-right: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.right-nav-list ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+}
+
+.right-nav-list ul a{
+  text-decoration: none;
+  color:black;
+}
+
+.right-nav-list ul li:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+
+.right-nav-list ul li {
+  font-size: 1.3rem;
+}
+
+.right-nav-buttons {
+  display: flex;
+  gap: 2vw; /* Adjust the gap value as needed */
+}
+
+.right-nav-buttons a {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: lightseagreen;
+  color: black;
+}
+
+button:hover {
+    border-color: lightseagreen;
+  background-color: white;
+  color: lightseagreen;
+  box-shadow: 2px 2px 0px lightseagreen;
+  cursor: pointer;
+}
+
+.page-1{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-1 .left-page1{
+    height: 100%;
+    width:50%;
+    /* background-image: url("Back.png"); */
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.left-page1-tagline img{
+  width: 50vw;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    padding-left: 2vw;
+
+}
+.left-page1-tagline span{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.left-page1-about{
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 5vw;
+    font-size: 1.75rem;
+    width: 50vw;
+}
+
+.right-page{
+    display: flex;
+}
+.right-page1 img{
+    margin-top: 9vw;
+    margin-left: 5vw;
+    width: 40vw;
+    border-radius: 50px;
+}
+
+.page-2{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-2 h1{
+  margin-top: 10vh;
+     padding-left: 5vw;
+    font-size: 3rem;
+
+}
+
+.page-2-content{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 10vh 5vw;
+}
+
+.right-contact {
+  margin-top: 10vh;
+}
+
+
+.Github img {
+  width: 3.6vw;
+  margin: 1vw 43vw;
+}
+
+.Copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Copyright h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 780px) {
+
+  body {
+    font-size: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .right-nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .page-1 {
+    flex-direction: column;
+  }
+
+  .right-page1 img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .left-page1, .right-page1{
+    margin-left: 20vw;
+  }
+
+  .left-page1-tagline{
+    margin-top: 40px;
+  }
+
+  .left-page1-about {
+    font-size: 1.2rem;
+    /* padding-left: 30px; */
+  }
+
+  .page-2 h1 {
+    font-size: 2rem;
+    margin-top: 40vh;
+  }
+
+  .page-2-content {
+    font-size: 1.3rem;
+    margin: 20px 10px;
+  }
+
+  .Github img {
+    width: 10%;
+    margin-top: 200px;
+  }
+
+  .Copyright h3 {
+    font-size: 0.8rem;
+  }
+
+}

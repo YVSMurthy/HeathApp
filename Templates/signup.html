@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../static/SignUpPage/SignUp.css">
+</head>
+<script src="../static/SignUpPage/signup_script.js"></script>
+<body>
+    <div id="Register">
+        <div id="signup">
+            <form id="myForm" action="/signup" method="POST">
+                <h1 id="siteName">Sign Up</h1>
+                <div id="userInputs">
+                    <label for="fullName" class="input-label">Full Name</label>
+                    <input type="text" name="name" id="fullName" class="input-field" placeholder="Full Name" required>
+
+                    <label for="email" class="input-label">Email Address</label>
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
+
+                    <div id="AgeGender">
+                        <div id="ageContainer">
+                            <label for="age" class="input-label" id="ageLabel">Age</label>
+                            <input type="number" name="age" class="input-field" id="age" value="0" min="0" max="150" required>
+                        </div>
+                        <div id="genderContainer">
+                            <label for="gender" class="input-label" id="genderLabel">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value="">--- Select ---</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Preferred not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="dob" class="input-label">Date of Birth</label>
+                    <input type="date" name="dob" class="date-of-birth" id="dob" required>
+
+                    <label for="password" class="input-label">Set Password</label>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password" required>
+
+                    <label for="confirmPassword" class="input-label">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="input-field" placeholder="Confirm Password" required>
+
+                    <input type="submit" id="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img id="sideImage" src="../static/SignUpPage/signup_side.png" alt="side Photo">
+        </div>
+    </div>
+</body>
+</html>
